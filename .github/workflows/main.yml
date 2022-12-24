@@ -12,3 +12,9 @@ jobs:
       - name: Push Image
         shell: cmd
         run: docker push sherya2022/demo-git-repo 
+      - name: kubernetes Deployment
+        shell: cmd
+        run: kubectl apply -f k8s.yaml
+      - name: Test
+        shell: cmd
+        run: kubectl get all
