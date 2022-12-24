@@ -8,7 +8,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Build Images
         shell: cmd
-        run: docker build -t shubhangiashishmurchite/demo-git-repo .
+        run: docker build -t sherya2022/demo-git-repo .
       - name: Push Image
         shell: cmd
-        run: docker push shubhangiashishmurchite/demo-git-repo 
+        run: docker push sherya2022/demo-git-repo 
