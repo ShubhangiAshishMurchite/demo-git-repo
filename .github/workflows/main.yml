@@ -1,0 +1,14 @@
+name: nginx-deployment
+on: push
+jobs:
+  my-job:
+    runs-on: Windows
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build Images
+        shell: cmd
+        run: docker build -t shubhangiashishmurchite/demo-git-repo .
+      - name: Push Image
+        shell: cmd
+        run: docker push shubhangiashishmurchite/demo-git-repo 
